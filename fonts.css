@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+body {
+    font-family: 'Pacifico', cursive;
+    background: ivory;
+}
+.btn {
+    font-family: 'Pacifico', cursive;
+    font-size: 16px;
+}
+article {
+    font-size: 20px;
+}
+#my_name {
+    font-weight: bolder;
+    font-size: 50px;
+    color: black;
+}
+@media(max-width: 750px) {
+    #my_name {
+        font-size: 30px;
+    }
+}
+@media(max-width: 600px) {
+  #my_name {
+    font-size: 50px;
+  }
+
+}
+
+.headers {
+    text-align: center;
+    font-size: 30px;
+    color:black;
+    font-weight: bold;
+}
+#hobby_list {
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.table_exp {
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+.form {
+    color: tomato;
+    font-size: 20px;    
+}

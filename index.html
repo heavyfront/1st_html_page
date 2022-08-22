@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,58 +8,100 @@
     <meta name="keywords" content="резюме, frontend, develop">
     <meta name="description" content="Визитная карточка будущего Front-end разработчика">
     <title>HeavySide Resume</title>
+    <link rel="stylesheet" href="selectors.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="borders.css">
+    <link rel="stylesheet" href="links_and_buttons.css">
 </head>
+
 <body>
-    <img src="images/main_photo.jpg" alt="Сергей Воронин" width="200">
-    <h1>Сергей Воронин</h1>
-    <p> Я старший инженер на большом заводе </p>
-
-    <p>Мне <strong>нравится программировать</strong>, и я хочу стать <strong><em>фронтенд разработчиком</em></strong></p>
-    <hr>
-    <h2>Мои хобби:</h2>
-    <ul>
-        <li>Программирование</li>
-        <li>Работа с микроконтроллерами (Arduino)</li>
-        <li>Умный дом (Home Assistant)</li>
-    </ul>
-    <h2>Опыт работы:</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Где работал</th>
-                <th>Должность</th>
-                <th>Когда работал</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Большой завод</td>
-                <td>старший инженер</td>
-                <td>2009 - сейчас</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h3>Список социальных сетей:</h3>
-    <a href="https://vk.com/id64823692" target="_blank">VK</a>
-
-    <h3>Связаться со мной:</h3>
-    <form>
-        <div>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите имя">
+    <div class="container">
+        <nav class="navigation">
+            <ul class="nav_1">
+                <li><a href="#">Main</a></li>
+                <li><a href="#">Info</a></li>
+                <li><a href="#">Hobby</a></li>
+            </ul>
+            <ul class="nav_2">
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Social</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="card_main">
+            <div class="photo_name">
+                <img id="main_photo" src="images/main_photo.jpg" alt="Сергей Воронин" width="200">
+                <header id="my_name">Сергей Воронин</header>
+            </div>
+            <div class="info_block">
+                <header class="headers">Немного о себе</header>
+                <section>
+                    <article>
+                        Я старший инженер на большом заводе
+                    </article>
+                    <article>
+                        Мне <strong>нравится программировать</strong>, и я хочу стать <strong><em>фронтенд
+                                разработчиком</em></strong>
+                    </article>
+                    <div class="info_social">
+                        <h3 class="headers">Список социальных сетей:</h3>
+                        <a href="https://vk.com/id64823692" target="_blank">VKontakte</a>
+                    </div>
+                </section>
+            </div>
         </div>
-        <div>
-            <label for="email">Ваш email:</label>
-            <input type="email" id="email" placeholder="Введите email">
+        <div class="card_hobby">
+            <div class="my_hobby">
+                <header class="headers">Мои хобби:</header>
+                <ul id="hobby_list">
+                    <li>Программирование</li>
+                    <li>Работа с микроконтроллерами (Arduino)</li>
+                    <li>Умный дом (Home Assistant)</li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <label for="message">Ваше сообщение:</label>
-            <br>
-            <textarea id="message" cols="30" rows="5" placeholder="Введите сообщение..."></textarea>
+        <div class="my_exp">
+            <h2 class="headers">Опыт работы:</h2>
+            <div class="tablica">
+                <table class="table_exp">
+                    <thead>
+                        <tr>
+                            <th class="table_column">Где работал</th>
+                            <th class="table_column">Должность</th>
+                            <th class="table_column">Когда работал</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="table_column">Большой завод</td>
+                            <td class="table_column">старший инженер</td>
+                            <td class="table_column">2009 - сейчас</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-        <button type="submit">Отправить</button>
-
-    </form>
+        <div class="card_contact">
+            <h3 class="headers">Связаться со мной:</h3>
+            <form class="form">
+                <div class="form_name_lastname">
+                    <div class="form_inputs">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" placeholder="Введите имя">
+                    </div>
+                    <div class="form_inputs">
+                        <label for="email">Ваш email:</label>
+                        <input type="email" id="email" placeholder="Введите email">
+                    </div>
+                </div>
+                <div class="form_message">
+                    <label for="message">Ваше сообщение:</label>
+                    <textarea id="message" cols="30" rows="5" placeholder="Введите сообщение..."></textarea>
+                </div>
+                <button class="btn" type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
 </body>
+
 </html>

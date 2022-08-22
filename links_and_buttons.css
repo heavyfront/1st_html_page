@@ -1,0 +1,115 @@
+a {
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+}
+
+a:hover {
+    color: brown;
+}
+
+.btn {
+    border: none;
+    background-color: coral;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    color: brown;
+}
+
+.navigation {
+    background-color: mediumturquoise;
+    margin-bottom: 5px;
+    border-radius: 30px;
+}
+.navigation {
+    display: flex;
+}
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100%;
+
+}
+
+.navigation li {
+    width: 100%;
+    text-align: center;
+}
+
+.navigation li:hover {
+    background-color: cyan;
+}
+
+.nav_1 li:first-child {
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    padding-left: 15px;
+}
+
+.nav_2 li:last-child {
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    padding-right: 15px;
+}
+@media(max-width: 700px) {
+    .nav_1 li a {
+        font-size: 25px;
+     }
+     .nav_2 li a {
+        font-size: 25px;
+     }
+    
+}
+
+@media(max-width: 600px) {
+    /* .navigation {
+        display: block;
+    }
+    .nav_2 li:first-child {
+        border-bottom-left-radius: 30px;
+    }
+    .nav_1 li:first-child {
+        border-bottom-left-radius: 0;
+    }
+    .nav_2 li:last-child {
+        border-top-right-radius: 0;
+    }
+    .nav_1 li:last-child {
+        border-top-right-radius: 30px;
+    }
+ */
+ .nav_1 li a {
+    font-size: 20px;
+ }
+ .nav_2 li a {
+    font-size: 20px;
+ }
+}
+
+.table_exp th:nth-child(odd) {
+    background-color: darkseagreen;
+}
+
+
+.table_exp td:nth-child(even) {
+    background-color: darkseagreen;
+}
+
+.table_exp thead tr:hover {
+    background-color: darkseagreen;
+}
+.table_exp tbody tr:hover {
+    background-color: darkseagreen;
+}
+
+
+.table_exp th:nth-child(odd):hover {
+    background-color: ghostwhite;
+}
